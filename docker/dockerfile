@@ -42,7 +42,7 @@ ENV XFORMERS_DISABLED=1
 RUN conda activate my &&\
     pip install scikit-image omegaconf opencv-contrib-python  imgaug Ninja timm albumentations nodejs jupyterlab scipy joblib scikit-learn ruamel.yaml trimesh pyyaml imageio open3d transformations einops gdown  &&\
     pip install -U git+https://github.com/lilohuang/PyTurboJPEG.git &&\
-    pip install onnx onnxruntime-gpu
+    pip install onnx onnxruntime-gpu onnxscript
 
 RUN apt-get update && apt-get install -y \
     libnvinfer10 \

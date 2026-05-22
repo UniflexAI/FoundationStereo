@@ -60,9 +60,9 @@ if __name__ == '__main__':
         input_names = ['left', 'right'],
         output_names = ['disp'],
         dynamic_axes={
-            'left': {0 : 'batch_size'},
-            'right': {0 : 'batch_size'},
-            'disp': {0 : 'batch_size'}
+            'left': {0: 'batch_size', 2: 'height', 3: 'width'},
+            'right': {0: 'batch_size', 2: 'height', 3: 'width'},
+            'disp': {0: 'batch_size', 1: 'height', 2: 'width'},
         },
     )
 
